@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seer表格</title>
+    <link rel="icon" href="./images/table.png">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="navi_bar">
+        <img src="./images/taomi.png" style="width: 100%;height: auto;">
+    </div>
+    <!--切换图片的父容器-->
+    <div id="div_001" > 
+        <button class="btn_toggle" onclick="toggleLeft()"><</button>
+        <img id="adverImage"  src="images/seer.png">
+        <button class="btn_toggle" onclick="toggleRight()">></button>
+    </div>
+    <div style="display: flex; justify-content: right;">
+        <button style="margin-right: 100px;" onclick="addRow(this)">新增数据</button>
+    </div>
+    <table id="tb_001">
+        <tr>
+            <th>游戏名称</th>
+            <th>在线人数</th>
+            <th>盈利价值</th>
+            <th>操作空间</th>
+        </tr>      
+        <tr>
+            <td>赛尔号</td>
+            <td>123700</td>
+            <td>高</td>
+            <td><button onclick="eidtRow(this)">编辑</button><button onclick="deleteRow(this)">删除</button></td>
+        </tr>
+        <tr>
+            <td>奥奇传说</td>
+            <td>64700</td>
+            <td>高</td>
+            <td><button onclick="eidtRow(this)">编辑</button><button onclick="deleteRow(this)">删除</button></td>
+        </tr>
+        <tr>
+            <td>奥拉星</td>
+            <td>48900</td>
+            <td>较高</td>
+            <td><button onclick="eidtRow(this)">编辑</button><button onclick="deleteRow(this)">删除</button></td>
+        </tr>
+    </table>  
+    <script src="./test.js"></script>
+</body>
+</html>
